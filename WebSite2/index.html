@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Depo</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li> <a href="">Meist </a></li>
+            <li> <a href="">Autod </a></li>
+            <li> <a href="">Kontaktid </a></li>
+        </ul>
+       <div class="outer-heading">
+        <h2>BEST CARSHOP 
+            <div class="inner-heading">
+                <span>
+                    Siin on suurim valik Tallinnas! <br/>
+                    Siin on parimad autod Tallinnas! <br/>
+                    Siin on üle 100 mudelit! <br/>
+                    Tasuta proovisõit! <br/>
+                </span>
+            </div>
+        </h2>
+       </div>
+ 
+     
+
+
+
+        <div class="sketchfab-embed-wrapper"> 
+            <iframe width= "800" height="400" title="Fallout Car 2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;  xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/cf54e5b166644fc7ade7bbaac502a04f/embed?autostart=1&amp;transparent=1&amp;autospin=0.5&amp;ui_stop=0&amp;ui_infos=0&amp;ui_controls=0&amp;watermark=0";>
+            </iframe>
+         </div> 
+
+    </div>
+
+    <div class="imageWrapper" id="wrapper">
+    <img src="images/Img1.jpg" alt="" id="fullImg">
+    <span>X</span>
+
+    </div>
+    
+   <div class="img-gallery">
+    <img src="images/Img1.jpg" alt="">
+    <img src="images/Img2.jpg" alt="">
+    <img src="images/Img3.jpg" alt="">
+    <img src="images/Img4.jpg" alt="">
+    <img src="images/Img1.jpg" alt="">
+    <img src="images/Img2.jpg" alt="">
+    <img src="images/Img3.jpg" alt=""> 
+    <img src="images/Img4.jpg" alt="">
+   </div>
+
+    <main>
+        <div class="signup">
+            <span>Not our client yet?</span>
+            <button type="button" class="sign-up-btn">SignUp</button>
+        </div>
+
+        <div class="login">
+            <span>Already have account?</span>
+            <button type="button">LogIn</button>
+        </div>
+
+        <div class="back-layer">
+        <form action="" class="login-form active">
+            <h2 class="login-label">Login</h2>
+            <input type="email" id="lemail" placeholder="Email"/>
+            <input type="password" id="password" placeholder="Password">
+            <button type="button">LogIn</button>
+        </form>
+
+        <form action="" class="signup-form">
+            <h2> Sign Up</h2>
+            <input type="text" id="f-name" placeholder="First Name"/>
+            <input type="text" id="l-name" placeholder="Last Name"/>
+            <input type="email" id="semail" placeholder="Email"/>
+            <input type="password" id="spassword" placeholder="Password"/>
+            <button type="button">SignUp</button>
+
+
+        </form>
+
+        </div>
+        
+    </main>
+
+  <div class="container">
+    <i class="fa-solid fa-magnifying-glass magnifier"></i>
+    <input type="text" class="input" placeholder="Search..">
+    <i class="fa-solid fa-microphone mic-icon"></i>
+
+  </div>
+
+  <!--<iframe width="800" height="600"
+   src="https://www.youtube.com/embed/aWH3aqA0AvQ?si=EuGmj2BMnvjhai1L" 
+   title="YouTube video player" frameborder="0" allow="accelerometer; 
+   autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+   web-share" allowfullscreen></iframe>
+  -->
+
+ <div style="text-align:center">
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+
+    <video id="video1" width="800" height="500" src="video1.mp4" autoplay muted loop  ></video>
+
+ </div>
+
+
+ <script>
+    var myVideo=document.getElementById("video1")
+
+    function playPause()
+    {
+        if(myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+    
+    function makeBig()
+    {
+        myVideo.width=900;
+    } 
+
+    function makeSmall()
+    {
+        myVideo.width=500;
+    }
+
+    function makeNormal()
+    {
+        myVideo.width=700;
+    }
+
+
+
+ </script>
+   
+   <script src="appO.js"></script> 
+    <script src="appN.js"></script>
+    <script src="app.js"></script> 
+    
+      
+      
+</body>  
+</html> 
